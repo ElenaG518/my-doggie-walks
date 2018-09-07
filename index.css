@@ -1,19 +1,22 @@
-*{box-sizing: border-box;}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin:0;
+}
 
 body {
-  margin: 0;
+  font-size: 20px;
   font-family: 'Playfair Display', serif;
   position: relative;
   background: url("https://oxfordshireanimalsanctuary.org.uk/wp-content/uploads/2016/08/paw-print-backgrounds-light-gray.png");
   background-repeat: repeat;
-  /* background-size: cover; */
 }
 
 /* header styles */
 
 header {
-  line-height: 1.4;
-  
+  line-height: 3.5em;
   box-shadow: 1px 1px 5px lightgray;
   background: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11419585.jpg");
   background-repeat: no-repeat;
@@ -29,21 +32,21 @@ header {
 } 
 
 .banner img {
-	width: 300px;
+  width: 300px;
   margin: 40px 20px;
-  /* padding: 10px 10px 35px; */
   float:left;
 }
 
 .banner h1 {
-	margin: 0;
+  margin: 0;
   padding: 25px;
-	font-size: 4em;
+  font-size: 4em;
   font-family: 'Shrikhand', cursive;
-	text-transform: uppercase;
+  text-transform: uppercase;
   color: #f13c20;
   text-shadow: 1px 1px black;
   letter-spacing: 2px;
+  line-height: 1.5em;
 }
 
 .banner a {
@@ -86,7 +89,7 @@ header {
 
 .active {
     background-color: rgb(76, 175, 80);
-    color: white;
+    color: black;
 }
 
 .topnav .icon {
@@ -100,68 +103,66 @@ header {
 
 /*   homepage styles */
 
-
-.occupy {
-  /* max-width: 1400px; */
+/* .occupy {
   padding: 5px;
-  /* background: radial-gradient(#2196f329, #bcd7e6d1,  #b0c5d0d1);
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  box-shadow: 0 0 5px lightgray; */
   text-align: left;
   line-height: 1.5em;
-  
-  }
+} */
 
 .service {
-  min-width: 300px;
-  margin:20px;
+  min-width: 280px;
+  margin:2.5% 3%;
   padding: 20px;
   border: 1px solid lightgray;
   background-color: white;
-  /* background: radial-gradient(#2196f329, #bcd7e6d1,  #b0c5d0d1);  */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 0 5px lightgray;
   text-align: left;
-  width: 22%;
-  float: left;
+  width: 40%;
+  display: inline-block;
   line-height: 1.5em;
 }
 
 .service h2 {
-	text-transform: uppercase;
+  text-transform: uppercase;
   text-align: center;
+  margin: 35px;
+}
+
+.service p {
+  padding: 20px;
+    line-height: 1.7em;
 }
 
 /* button styles */
 .js-walking, .js-pet-sitting, .js-hiking, .js-running {
-  color: white;
-  width: 95%;
+  color: black;
+  width: 45%;
   display: block;
-  background-color: rgb(76, 175, 80);
-  /* background-color:#4056a1; */
+  /* background-color: rgb(35, 143, 39); */
+  background-color:rgba(77, 233, 142, 0.945);
+  border: 2px outset darkgray;
+  box-shadow: 2px 2px darkgray;
   margin: 30px auto;
   text-align: center;
   font-size: 1.5em;
-  padding: 15px 30px;
-  border-radius: 5px;
+  padding: 15px 30px; */
+  /* border-radius: 5px; */
 }
 
 button:hover {
   background-color: rgb(3, 116, 7);
-  
 }
 
 button:focus {
   box-shadow: 0 0 2px 2px rgb(76, 175, 80);
 }
 
-
 /* rates descriptions */
 
 .rates {
   max-width: 700px;
-  min-width: 300px;
+  min-width: 280px;
   line-height: 1.5em;
   margin: 40px auto;
   border: 3px solid #de1bcf17;
@@ -209,9 +210,10 @@ table caption {
 
 /* footer and address styles */
 
-.footfix {clear: both;
-padding-bottom: 240px;
-
+.footfix {
+  clear: both;
+  padding-bottom: 240px;
+  padding-top: 100px;
 }
 
 footer {
@@ -220,21 +222,19 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-	text-align: center;
+  text-align: center;
   line-height: 1.5em;
   background: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11419585.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid darkgrey;
   margin-top: 100px;
-
-  }
+}
 
 address {
   padding: 60px;
   margin: 10px 0;
   background-color: rgba(251,251, 251, 0.5);
-  /* background: radial-gradient(#ffc10763, #efe2ba); */
   box-shadow: 1px 1px 5px lightgray;
 }
 
@@ -255,6 +255,7 @@ address {
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
@@ -262,34 +263,62 @@ address {
   }
 }
 
-/* responsive banner styles */
 @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 600px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+ and (min-width: 550px)
+ and (max-width: 745px)
+ {
 
-  .banner {margin: 0 20px;}
-
-  .banner h1 {
-  font-size: 2em;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  text-align: right;
-   }
-
-
-  .banner img, .banner p {
-  display: none;
+  .banner img {
+    display: block;
+    width: 60%;
+    margin: 10% 15%;
   }
 
-  .nav-container {margin: 0; }
+}
+
+
+
+/* responsive banner styles */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 600px)
+  /* and (-webkit-min-device-pixel-ratio: 2) { */
+{
+  .banner {
+    margin: 0;
+  }
+
+  .banner h1 {
+  font-size: 2.5em;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  text-align: center;
+  }
+
+  .banner img {
+    padding: 0;
+    width: 80%;
+    margin: 10%;
+  }
+    
+  .banner p {
+  padding: 0 7px 100px;
+  }
+
+  .nav-container {
+    margin: 0;
+  }
 
  .service, .rates {
    box-sizing: border-box;
    width: 95%;
-   margin: 2.5%;
+  margin: 2.5%;
    clear: both;
-   }
+  }
+
+  #contact, #contact a {
+     font-size: 16px;
+  }
 
  footer {
    position: relative;
@@ -298,6 +327,5 @@ address {
 
  .footfix {
    padding-bottom: 0;
-
  }
 }
