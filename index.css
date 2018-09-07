@@ -1,0 +1,303 @@
+*{box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  background: url("https://oxfordshireanimalsanctuary.org.uk/wp-content/uploads/2016/08/paw-print-backgrounds-light-gray.png");
+  background-repeat: repeat;
+  /* background-size: cover; */
+}
+
+/* header styles */
+
+header {
+  line-height: 1.4;
+  
+  box-shadow: 1px 1px 5px lightgray;
+  background: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11419585.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.opacity {background-color: rgba(251,251, 251, 0.5);}
+
+.banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+} 
+
+.banner img {
+	width: 300px;
+  margin: 40px 20px;
+  /* padding: 10px 10px 35px; */
+  float:left;
+}
+
+.banner h1 {
+	margin: 0;
+  padding: 25px;
+	font-size: 4em;
+  font-family: 'Shrikhand', cursive;
+	text-transform: uppercase;
+  color: #f13c20;
+  text-shadow: 1px 1px black;
+  letter-spacing: 2px;
+}
+
+.banner a {
+  text-decoration: none;
+}
+
+.banner p {
+    padding-bottom: 35px;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+/* top nav styles */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background: hsl(0, 0%, 25%);
+  color: white;
+}
+
+.active {
+    background-color: rgb(76, 175, 80);
+    color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.nav-color{
+  margin: 0 auto;
+  background-color: rgb(51, 51, 51);
+}
+
+/*   homepage styles */
+
+
+.occupy {
+  /* max-width: 1400px; */
+  padding: 5px;
+  /* background: radial-gradient(#2196f329, #bcd7e6d1,  #b0c5d0d1);
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 0 5px lightgray; */
+  text-align: left;
+  line-height: 1.5em;
+  
+  }
+
+.service {
+  min-width: 300px;
+  margin:20px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  background-color: white;
+  /* background: radial-gradient(#2196f329, #bcd7e6d1,  #b0c5d0d1);  */
+  border-radius: 10px;
+  box-shadow: 0 0 5px lightgray;
+  text-align: left;
+  width: 22%;
+  float: left;
+  line-height: 1.5em;
+}
+
+.service h2 {
+	text-transform: uppercase;
+  text-align: center;
+}
+
+/* button styles */
+.js-walking, .js-pet-sitting, .js-hiking, .js-running {
+  color: white;
+  width: 95%;
+  display: block;
+  background-color: rgb(76, 175, 80);
+  /* background-color:#4056a1; */
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(3, 116, 7);
+  
+}
+
+button:focus {
+  box-shadow: 0 0 2px 2px rgb(76, 175, 80);
+}
+
+
+/* rates descriptions */
+
+.rates {
+  max-width: 700px;
+  min-width: 300px;
+  line-height: 1.5em;
+  margin: 40px auto;
+  border: 3px solid #de1bcf17;
+  background: radial-gradient(#2196f329, #bcd7e6d1,  #b0c5d0d1);
+  border-radius: 10px;
+  box-shadow: 0 0 5px lightgray;
+}
+
+.rates p{
+  text-align: center;
+  margin: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* table styles */
+
+table {
+  min-width: 280px;
+}
+
+table, table th, table tr, table td {
+  border: 1px solid #4056a1;
+  padding: 15px;
+  border-collapse: collapse;
+  background-color: beige;
+  text-align: center;
+  margin: 20px auto;
+}
+
+table caption {
+  margin: 10px auto;
+}
+
+/* contact me styles */
+
+#contact, #contact a {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+}
+
+/* footer and address styles */
+
+.footfix {clear: both;
+padding-bottom: 240px;
+
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+	text-align: center;
+  line-height: 1.5em;
+  background: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11419585.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid darkgrey;
+  margin-top: 100px;
+
+  }
+
+address {
+  padding: 60px;
+  margin: 10px 0;
+  background-color: rgba(251,251, 251, 0.5);
+  /* background: radial-gradient(#ffc10763, #efe2ba); */
+  box-shadow: 1px 1px 5px lightgray;
+}
+
+/* responsive menu styles */
+@media screen and (max-width: 600px) {
+  .nav-container {justify-content: flex-end;} 
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* responsive banner styles */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 600px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .banner {margin: 0 20px;}
+
+  .banner h1 {
+  font-size: 2em;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: right;
+   }
+
+
+  .banner img, .banner p {
+  display: none;
+  }
+
+  .nav-container {margin: 0; }
+
+ .service, .rates {
+   box-sizing: border-box;
+   width: 95%;
+   margin: 2.5%;
+   clear: both;
+   }
+
+ footer {
+   position: relative;
+   margin-top: 0px;
+ }  
+
+ .footfix {
+   padding-bottom: 0;
+
+ }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+	<title>Elena's Dog Walking & Pet Sitting Service</title>
+	<meta name="description" content="Dog Walking and Pet Sitting in West Los Angeles and Beach Cities">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+<!--     <link rel="stylesheet" href="grid.css" type="text/css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+	<header class="masthead">
+    <div class="opacity">
+      <div class="centered">
+        <div class="site-branding">
+          <div class="for-pic">
+            <img src="http://www.redleash.ca/assets/logo-no-text(real).svg" class="logo">
+            <h1 class="site-title">Elena's Dog Walking and Pet-Sitting Service</h1>
+          </div>  <!-- .for-pic-->
+          <p>Serving West Los Angeles, Mar Vista, Santa Monica, Venice, Marina del Rey, El Segundo, Playa Vista and Culver City</p>
+        </div><!-- .site-branding -->
+      </div><!-- .centered -->
+    </div> <!-- .opacity -->
+  </header><!-- .masthead -->
+    
+  <section class="nav-color">
+    <div class="nav-container">
+    <div class="topnav main-area menu-section" id="myTopnav">
+      <a href="#home" class="active nav-home">Home</a>
+      <a href="#walk" class="nav-walking">Dog Walking Rates</a>
+      <a href="#hike" class="nav-hiking">Dog Hiking Rates</a>
+      <a href="#run" class="nav-running">Dog Running Rates</a>
+      <a href="#sitting" class="nav-sitting">Pet-sitting Rates</a>
+      <a href="#contact" class="nav-contact">Contact me</a>
+      <!--  <a href="#about">About</a>  -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+    </div>
+    </div>
+  </section>
+
+  <main class="container">
+      <div class="occupy">
+	    <section class="service walking">
+	   	 <h2>Dog Walking</h2>
+	   	 <p>All walks are private and may be scheduled for 30, 45, or 60 minutes.   I can also accomodate longer or shorter walks.  <a href="mailto:elenag518@gmail.com">Contact me</a> to discuss.   If you are looking to get your dog some exercise, I also offer 20 minute runs.  For longer exercise, I am also available to take your dog for a hike to one of our local mountains for a 2 hour hike.</p>
+        <button class="js-walking" >Rates</button>
+        
+        <!-- div for walking -->
+	    </section>
+
+      <section class="service hiking">
+	   	 <h2>Dog Hiking</h2>
+	   	 <p>Do you have a high-energy dog that is always ready to explore and requires a longer form of exercise and stimulation? I'll take your dog for a hike to Temescal Canyon or any other local trail of your choice.  Dogs are required to and will be leashed at all times.    Hikes normally take about two hours, plus commute time to and from your place. Commute time is included in the price within a 5 mile radius from Mar Vista.</p>
+        <button class="js-hiking" >Rates</button>
+        <!-- div for Hiking  -->
+      </section>
+
+      <section class="service running">
+	   	 <h2>Dog Running</h2>
+	   	 <p>Do you have a dog that requires more intensive exercise, or needs to burn off a little weight?  Then you may consider a 20 minute run for your pooch. All runs can be customized by 5 minute increments or decrements.</p>
+        <button class="js-running" >Rates</button>
+        <!-- div for running  -->
+      </section>
+
+	    <section class="service pet-sitting">
+	   	   <h2>Pet Sitting</h2>
+	       <p>I am available to come and pet sit and house sit while you are away.  Rest assured that your pet will be in loving, caring hands while you are away.  I watch over dogs, cats, bunnies, birds and small reptiles.  Feel free to contact me if your pet falls outside of these categories to discuss.</p>
+         <button class="js-pet-sitting" >Rates</button>
+         <!-- div for pet-sitting -->
+	    </section>
+      <!-- div occupy -->
+      </div>
+   
+    
+      <div class="rates hidden">
+
+      <section id="walk">
+      <table>
+      <caption>Dog Walking</caption>
+      <tr>
+      <th>duration</th>
+      <th>fee</th>
+      </tr>
+
+      <tr>
+      <td>30 minutes</td>
+      <td>$20</td>
+      </tr>
+
+      <tr>
+      <td>45 minutes</td>
+      <td>$25</td>
+      </tr>
+      <tr>
+      <td>60 minutes</td>
+      <td>$30</td>
+      </tr>
+      </table>
+
+      <p>* $5 per each additional dog </p>
+      </section>
+
+      <section id="run">
+      <table>
+      <caption>Dog Runs</caption>
+      <tr>
+      <th>duration</th>
+      <th>fee</th>
+      </tr>
+      <tr>
+      <th>15 minutes</th>
+      <th>$20</th>
+      </tr>
+      <tr>
+      <th>20 minutes</th>
+      <th>$25</th>
+      </tr>
+      <tr>
+      <th>30 minutes</th>
+      <th>$35</th>
+      </tr>
+      </table>
+
+      <p> * $5 per each additional dog
+    </section>
+
+    <section id="hike">
+      <table>
+      <caption>Hike Temescal Canyon or other dog-friendly trails</caption>
+      <tr>
+      <td>Two-hour session</td>
+      <td>$75 per day</td>
+      </tr>
+      </table>
+
+      <p>* $5 per each additional dog.</p>
+      <p>**includes pick-up and drop off within a 5 mile radius from Mar Vista. $10 extra fee for an additional 5-mile radius each way.</p>
+      <p>*food and treats must be provided by owner for the safety of your pet.</p>
+    </section>
+
+
+  <section id="sitting">
+        <table>
+    <caption>In-Home Pet-Sitting / House Sitting</caption>
+    <tr>
+    <td>Pet sitting</td>
+    <td>$65 per day</td>
+    </tr>
+  </table>
+
+    <p>* $10 per each additional pet.</p>
+    <p>**$5 for administration of medication.</p>
+    </section>
+
+  <section id="contact">
+    <h3>Contact me:</h3>
+    <p>Elena's Dog Walking & Pet Sitting Service<br>
+		Mar Vista, CA <br>
+    Voice/text: 310-384-6767 <br>
+		<a href="mailto:elenag518@gmail.com">elenaG518@gmail.com</a></p>
+  </section>
+    <!-- div for rates -->
+    </div>
+
+  
+</main>
+
+  <div class="footfix">
+  
+   <footer>
+
+	<address>
+		Elena's Dog Walking & Pet Sitting Service<br>
+		Mar Vista, CA <br>
+    310-384-6767 &bull;
+		<a href="mailto:elenag518@gmail.com">elenaG518@gmail.com</a>
+	</address>
+   </footer>
+  </div>
+
+</body>
+</html>
